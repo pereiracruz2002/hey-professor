@@ -30,7 +30,7 @@ it('should be able create a new question bigger than 250 characters', function()
 //     actingAs($user);
 
 //     $request = post(route('question.store'),  [
-//         'question' => str_repeat('*', 10).'?',
+//         'question' => str_repeat('*', 10),
 //     ]);
 
 //     $request->assertSessionHasErrors([
