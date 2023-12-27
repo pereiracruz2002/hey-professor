@@ -3,7 +3,7 @@
     'post'=>NULL,
     'put'=>NULL,
     'delete'=>NULL,
-]);
+])
 
 <form action="{{ route('question.store') }}" method="post">
     @csrf
