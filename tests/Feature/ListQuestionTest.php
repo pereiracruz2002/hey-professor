@@ -1,16 +1,14 @@
 <?php
 
-use App\Models\User;
 use App\Models\Question;
-use function Pest\Laravel\get;
+use App\Models\User;
 use function Pest\Laravel\actingAs;
+use function Pest\Laravel\get;
 
 it('should list all the question', function () {
-
     $user = User::factory()->create();
     $questions = Question::factory()->count(5)->create();
     actingAs($user);
-
 
     $response = get('dashboard');
 
